@@ -1,0 +1,25 @@
+{
+  "name": "highlightjs-chaos",
+  "version": "0.0.1",
+  "description": "highlight.js syntax definition for the Chaos language",
+  "main": "src/chaos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaos-lang/highlightjs-chaos.git"
+  },
+  "keywords": [
+    "chaos",
+    "highlight.js",
+    "highlightjs",
+    "syntax"
+  ],
+  "author": "M. Mert Yildiran <me@mertyildiran.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaos-lang/highlightjs-chaos/issues"
+  },
+  "homepage": "https://github.com/chaos-lang/highlightjs-chaos"
+}

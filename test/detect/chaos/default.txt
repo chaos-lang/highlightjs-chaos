@@ -1,0 +1,35 @@
+import math
+
+/*
+This is a
+multiline comment
+for the function below
+@description Adds to numbers together
+*/
+num def add(num x, str y)
+    num z = x + y
+
+    bool a = true
+    num b = 576.34
+    // This is a comment
+    list c = ['foo', "bar", 17, 3.14, a, false] // End of Line(EOL) comment
+    # This is a comment too
+    dict d = {'a': 1, 'b': b, 'c': [2, 3, 4]} # End of Line(EOL) comment
+
+    del c
+    return z
+end {
+    z == 8  : f1(),
+    z > 10  : f2(),
+    default : f3()
+}
+
+print add(3, 5)
+
+echo math.sin(30)
+
+// Interactive shell example
+kaos> str message = "hello world"
+kaos> INFINITE times do
+....      print message
+....  end
