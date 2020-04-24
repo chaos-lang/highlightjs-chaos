@@ -1,7 +1,7 @@
 # Chaos language grammar for highlight.js
 
 ![version](https://badgen.net/npm/v/highlightjs-chaos) ![license](https://badgen.net/badge/license/MIT/blue)
-![install size](https://badgen.net/packagephobia/install/highlightjs-chaos) ![minified size](https://badgen.net/bundlephobia/min/highlightjs-chaos)
+![install size](https://badgen.net/packagephobia/install/highlightjs-chaos)
 
 ## Usage
 
