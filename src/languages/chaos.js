@@ -53,6 +53,8 @@ module.exports = function (hljs) {
   };
 
   return {
+    name: 'Chaos',
+    aliases: ['chaos', 'kaos'],
     case_insensitive: false,
     keywords: KEYWORDS,
     contains: [
