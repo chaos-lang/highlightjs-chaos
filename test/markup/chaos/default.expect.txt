@@ -1,5 +1,5 @@
 <span class="hljs-keyword">import</span> math
-from math <span class="hljs-keyword">import</span> cos
+<span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> cos
 <span class="hljs-keyword">import</span> math <span class="hljs-keyword">as</span> math2
 
 <span class="hljs-comment">/*
