@@ -46,12 +46,18 @@ module.exports = function (hljs) {
     excludeEnd: true,
     keywords: KEYWORDS
   };
+  var NUMBER = {
+    className: 'number',
+    begin: hljs.C_NUMBER_RE + 'n?',
+    relevance: 0
+  };
 
   return {
     case_insensitive: false,
     keywords: KEYWORDS,
     contains: [
       PROMPT,
+      NUMBER,
       STRING,
       hljs.HASH_COMMENT_MODE,
       hljs.COMMENT('//', '$'),
