@@ -1,8 +1,8 @@
 {
   "name": "highlightjs-chaos",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "highlight.js syntax definition for the Chaos language",
-  "main": "src/chaos.js",
+  "main": "src/languages/chaos.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

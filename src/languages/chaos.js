@@ -6,7 +6,7 @@ Website: https://chaos-lang.org/
 Category: common
 */
 
-export default function(hljs) {
+module.exports = function (hljs) {
   var KEYWORDS = {
     keyword:
       'exit quit print del return times do end foreach as def and or not default echo import',
@@ -39,29 +39,13 @@ export default function(hljs) {
     className: 'doctag',
     begin: '@[A-Za-z]+'
   };
-  var COMMENT_MODES = [
-    hljs.COMMENT(
-      '#',
-      '\n',
-      {
-        contains: [DOCTAG]
-      }
-    ),
-    hljs.COMMENT(
-      '//',
-      '\n',
-      {
-        contains: [DOCTAG]
-      }
-    ),
-    hljs.COMMENT(
-      '/\\*', // begin
-      '\\*/', // end
-      {
-        contains: [DOCTAG]
-      }
-    )
-  ];
+  var PARAMS = {
+    className: 'params',
+    begin: /\(/, end: /\)/,
+    excludeBegin: true,
+    excludeEnd: true,
+    keywords: KEYWORDS
+  };
 
   return {
     case_insensitive: false,
@@ -69,7 +53,23 @@ export default function(hljs) {
     contains: [
       PROMPT,
       STRING,
-      COMMENT_MODES
+      hljs.HASH_COMMENT_MODE,
+      hljs.COMMENT('//', '$'),
+      hljs.COMMENT(
+        '/\\*',
+        '\\*/',
+        {
+          contains: [DOCTAG]
+        }
+      ),
+      {
+        className: 'function',
+        beginKeywords: 'def', end: '$',
+        contains: [
+          hljs.UNDERSCORE_TITLE_MODE,
+          PARAMS
+        ]
+      }
     ],
     disableAutodetect: false
   }
