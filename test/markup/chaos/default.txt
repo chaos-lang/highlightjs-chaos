@@ -48,6 +48,10 @@ num def f3()
     return c
 end
 
+void def f4()
+    print "baz"
+end
+
 list a = [
     1,
     2,
@@ -68,6 +72,10 @@ foreach n as key : val
     print key
     print val
 end
+
+symbol_table
+
+function_table
 
 // Interactive shell example
 kaos> str message = "hello world"

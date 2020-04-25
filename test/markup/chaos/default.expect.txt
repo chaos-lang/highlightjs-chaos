@@ -8,17 +8,17 @@ multiline comment
 for the function below
 <span class="hljs-doctag">@description</span> Adds to numbers together
 */</span>
-<span class="hljs-type">num</span> <span class="hljs-keyword">def</span> add(<span class="hljs-type">num</span> x, <span class="hljs-type">str</span> y)
+<span class="hljs-type">num</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add</span>(<span class="hljs-params"><span class="hljs-type">num</span> x, <span class="hljs-type">str</span> y</span>)</span>
     <span class="hljs-type">num</span> z = x + y
 
     <span class="hljs-type">bool</span> a = <span class="hljs-literal">true</span>
     <span class="hljs-type">num</span> b = 576.34
-    <span class="hljs-comment">// This is a comment
-</span>    <span class="hljs-type">list</span> c = [<span class="hljs-string">'foo'</span>, <span class="hljs-string">"bar"</span>, 17, 3.14, a, <span class="hljs-literal">false</span>] <span class="hljs-comment">// End of Line(EOL) comment
-</span>    <span class="hljs-built_in">pretty</span> <span class="hljs-keyword">echo</span> c
-    <span class="hljs-comment"># This is a comment too
-</span>    <span class="hljs-type">dict</span> d = {<span class="hljs-string">'a'</span>: 1, <span class="hljs-string">'b'</span>: b, <span class="hljs-string">'c'</span>: [2, 3, 4]} <span class="hljs-comment"># End of Line(EOL) comment
-</span>    <span class="hljs-built_in">pretty</span> <span class="hljs-keyword">print</span> d
+    <span class="hljs-comment">// This is a comment</span>
+    <span class="hljs-type">list</span> c = [<span class="hljs-string">'foo'</span>, <span class="hljs-string">"bar"</span>, 17, 3.14, a, <span class="hljs-literal">false</span>] <span class="hljs-comment">// End of Line(EOL) comment</span>
+    <span class="hljs-built_in">pretty</span> <span class="hljs-keyword">echo</span> c
+    <span class="hljs-comment"># This is a comment too</span>
+    <span class="hljs-type">dict</span> d = {<span class="hljs-string">'a'</span>: 1, <span class="hljs-string">'b'</span>: b, <span class="hljs-string">'c'</span>: [2, 3, 4]} <span class="hljs-comment"># End of Line(EOL) comment</span>
+    <span class="hljs-built_in">pretty</span> <span class="hljs-keyword">print</span> d
 
     <span class="hljs-keyword">del</span> c
 <span class="hljs-keyword">end</span> {
@@ -33,19 +33,23 @@ for the function below
 <span class="hljs-keyword">print</span> cos(60)
 <span class="hljs-keyword">print</span> math2.tan(45)
 
-<span class="hljs-type">num</span> <span class="hljs-keyword">def</span> f1()
+<span class="hljs-type">num</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>)</span>
     <span class="hljs-type">num</span> a = 101
     <span class="hljs-keyword">return</span> a
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-type">num</span> <span class="hljs-keyword">def</span> f2()
+<span class="hljs-type">num</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f2</span>(<span class="hljs-params"></span>)</span>
     <span class="hljs-type">num</span> b = 102
     <span class="hljs-keyword">return</span> b
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-type">num</span> <span class="hljs-keyword">def</span> f3()
+<span class="hljs-type">num</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f3</span>(<span class="hljs-params"></span>)</span>
     <span class="hljs-type">num</span> c = 103
     <span class="hljs-keyword">return</span> c
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-literal">void</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">f4</span>(<span class="hljs-params"></span>)</span>
+    <span class="hljs-keyword">print</span> <span class="hljs-string">"baz"</span>
 <span class="hljs-keyword">end</span>
 
 <span class="hljs-type">list</span> a = [
@@ -69,8 +73,12 @@ for the function below
     <span class="hljs-keyword">print</span> val
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-comment">// Interactive shell example
-</span><span class="hljs-meta">kaos&gt; </span><span class="hljs-type">str</span> message = <span class="hljs-string">"hello world"</span>
+<span class="hljs-built_in">symbol_table</span>
+
+<span class="hljs-built_in">function_table</span>
+
+<span class="hljs-comment">// Interactive shell example</span>
+<span class="hljs-meta">kaos&gt; </span><span class="hljs-type">str</span> message = <span class="hljs-string">"hello world"</span>
 <span class="hljs-meta">kaos&gt; </span><span class="hljs-built_in">INFINITE</span> <span class="hljs-keyword">times</span> <span class="hljs-keyword">do</span>
 <span class="hljs-meta">.... </span>     <span class="hljs-keyword">print</span> message
 <span class="hljs-meta">.... </span> <span class="hljs-keyword">end</span>
