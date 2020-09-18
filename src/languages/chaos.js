@@ -9,7 +9,7 @@ Category: common
 module.exports = function (hljs) {
   var KEYWORDS = {
     keyword:
-      'exit quit print del return times do end foreach as def and or not default echo import from',
+      'exit quit print del return times do end foreach as def and or not default echo import from break continue',
     literal:
       'true false null void nan inf',
     type:
